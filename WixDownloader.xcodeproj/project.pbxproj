@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66160F40184C2F5D00C4FDFC /* seo.html in Resources */ = {isa = PBXBuildFile; fileRef = 66160F3F184C2F5D00C4FDFC /* seo.html */; };
+		66280D12188F522100B9B2DF /* adfooter.html in Resources */ = {isa = PBXBuildFile; fileRef = 66280D11188F522100B9B2DF /* adfooter.html */; };
+		66280D14188F523500B9B2DF /* adheader.html in Resources */ = {isa = PBXBuildFile; fileRef = 66280D13188F523500B9B2DF /* adheader.html */; };
+		6631446718AC95ED00083F65 /* htaccess in Resources */ = {isa = PBXBuildFile; fileRef = 6631446618AC95ED00083F65 /* htaccess */; };
+		665155F31892EA6C0020BA24 /* contact.php in Resources */ = {isa = PBXBuildFile; fileRef = 665155F21892EA6C0020BA24 /* contact.php */; };
+		6676BDBB18335444004A463B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6676BDBA18335444004A463B /* Cocoa.framework */; };
+		6676BDC718335444004A463B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6676BDC618335444004A463B /* main.m */; };
+		6676BDCE18335444004A463B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6676BDCD18335444004A463B /* AppDelegate.m */; };
+		6676BDF218336BD8004A463B /* pwned.png in Resources */ = {isa = PBXBuildFile; fileRef = 6676BDF118336BD8004A463B /* pwned.png */; };
+		6676BDF918336EA0004A463B /* wix.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6676BDF818336EA0004A463B /* wix.icns */; };
+		667F563518AB157C003BB93E /* DynamicImageResizer.php in Resources */ = {isa = PBXBuildFile; fileRef = 667F563418AB157C003BB93E /* DynamicImageResizer.php */; };
+		66952EBD188EF4450048CC6F /* dynamicmodel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66952EBC188EF4450048CC6F /* dynamicmodel.txt */; };
+		66A7379B189077160053EB6F /* html5shiv.html in Resources */ = {isa = PBXBuildFile; fileRef = 66A73799189077160053EB6F /* html5shiv.html */; };
+		66CE4E48184A8A0C00123FF8 /* index.php in Resources */ = {isa = PBXBuildFile; fileRef = 66CE4E47184A8A0C00123FF8 /* index.php */; };
+		66E74D03184C1E9200F38D05 /* image.php in Resources */ = {isa = PBXBuildFile; fileRef = 66E74D02184C1E9200F38D05 /* image.php */; };
+		66FC64FE18452ADB00F664CC /* ToolTipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FC64FD18452ADB00F664CC /* ToolTipController.m */; };
+		66FC650318452E3E00F664CC /* pwned@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FC650218452E3E00F664CC /* pwned@2x.png */; };
+		66FC650518452EAE00F664CC /* tip.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FC650418452EAE00F664CC /* tip.png */; };
+		66FC650718452F8500F664CC /* tip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FC650618452F8500F664CC /* tip@2x.png */; };
+		66FC650C184531DD00F664CC /* ToolTip.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FC650A184531DD00F664CC /* ToolTip.xib */; };
+		66FC650F1845320500F664CC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FC650D1845320500F664CC /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66160F3F184C2F5D00C4FDFC /* seo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = seo.html; path = Resources/seo.html; sourceTree = "<group>"; };
+		66280D11188F522100B9B2DF /* adfooter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = adfooter.html; path = Resources/adfooter.html; sourceTree = "<group>"; };
+		66280D13188F523500B9B2DF /* adheader.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = adheader.html; path = Resources/adheader.html; sourceTree = "<group>"; };
+		6631446618AC95ED00083F65 /* htaccess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = htaccess; path = Resources/htaccess; sourceTree = "<group>"; };
+		665155F21892EA6C0020BA24 /* contact.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; name = contact.php; path = Resources/contact.php; sourceTree = "<group>"; };
+		6676BDB718335444004A463B /* WixDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WixDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6676BDBA18335444004A463B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6676BDC218335444004A463B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6676BDC618335444004A463B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6676BDCC18335444004A463B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6676BDCD18335444004A463B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6676BDF118336BD8004A463B /* pwned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pwned.png; path = Resources/pwned.png; sourceTree = "<group>"; };
+		6676BDF818336EA0004A463B /* wix.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = wix.icns; path = ../wix.icns; sourceTree = "<group>"; };
+		667F563418AB157C003BB93E /* DynamicImageResizer.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; name = DynamicImageResizer.php; path = Resources/DynamicImageResizer.php; sourceTree = "<group>"; };
+		66952EBC188EF4450048CC6F /* dynamicmodel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dynamicmodel.txt; path = Resources/dynamicmodel.txt; sourceTree = "<group>"; };
+		66A73799189077160053EB6F /* html5shiv.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = html5shiv.html; path = Resources/html5shiv.html; sourceTree = "<group>"; };
+		66CE4E47184A8A0C00123FF8 /* index.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; name = index.php; path = Resources/index.php; sourceTree = "<group>"; };
+		66E74D02184C1E9200F38D05 /* image.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; name = image.php; path = Resources/image.php; sourceTree = "<group>"; };
+		66FC64FC18452AD700F664CC /* ToolTipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolTipController.h; sourceTree = "<group>"; };
+		66FC64FD18452ADB00F664CC /* ToolTipController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolTipController.m; sourceTree = "<group>"; };
+		66FC650218452E3E00F664CC /* pwned@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pwned@2x.png"; path = "Resources/pwned@2x.png"; sourceTree = "<group>"; };
+		66FC650418452EAE00F664CC /* tip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tip.png; path = Resources/tip.png; sourceTree = "<group>"; };
+		66FC650618452F8500F664CC /* tip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tip@2x.png"; path = "Resources/tip@2x.png"; sourceTree = "<group>"; };
+		66FC650B184531DD00F664CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ToolTip.xib; sourceTree = "<group>"; };
+		66FC650E1845320500F664CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6676BDB418335444004A463B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6676BDBB18335444004A463B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6676BDAE18335444004A463B = {
+			isa = PBXGroup;
+			children = (
+				6676BDC018335444004A463B /* WixDownloader */,
+				6676BDB918335444004A463B /* Frameworks */,
+				6676BDB818335444004A463B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6676BDB818335444004A463B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6676BDB718335444004A463B /* WixDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6676BDB918335444004A463B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6676BDBA18335444004A463B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6676BDC018335444004A463B /* WixDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				6676BDEE18336A20004A463B /* Resources */,
+				6676BDC618335444004A463B /* main.m */,
+				6676BDCC18335444004A463B /* AppDelegate.h */,
+				6676BDCD18335444004A463B /* AppDelegate.m */,
+				66FC64FC18452AD700F664CC /* ToolTipController.h */,
+				66FC64FD18452ADB00F664CC /* ToolTipController.m */,
+				66FC650D1845320500F664CC /* MainMenu.xib */,
+				66FC650A184531DD00F664CC /* ToolTip.xib */,
+				6676BDC218335444004A463B /* Info.plist */,
+			);
+			path = WixDownloader;
+			sourceTree = "<group>";
+		};
+		6676BDEE18336A20004A463B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66952EBC188EF4450048CC6F /* dynamicmodel.txt */,
+				66A73799189077160053EB6F /* html5shiv.html */,
+				66280D13188F523500B9B2DF /* adheader.html */,
+				66280D11188F522100B9B2DF /* adfooter.html */,
+				66160F3F184C2F5D00C4FDFC /* seo.html */,
+				6631446618AC95ED00083F65 /* htaccess */,
+				66CE4E47184A8A0C00123FF8 /* index.php */,
+				665155F21892EA6C0020BA24 /* contact.php */,
+				667F563418AB157C003BB93E /* DynamicImageResizer.php */,
+				66E74D02184C1E9200F38D05 /* image.php */,
+				66FC650218452E3E00F664CC /* pwned@2x.png */,
+				66FC650618452F8500F664CC /* tip@2x.png */,
+				6676BDF118336BD8004A463B /* pwned.png */,
+				66FC650418452EAE00F664CC /* tip.png */,
+				6676BDF818336EA0004A463B /* wix.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6676BDB618335444004A463B /* WixDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6676BDE818335444004A463B /* Build configuration list for PBXNativeTarget "WixDownloader" */;
+			buildPhases = (
+				6676BDB318335444004A463B /* Sources */,
+				6676BDB418335444004A463B /* Frameworks */,
+				6676BDB518335444004A463B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WixDownloader;
+			productName = WixDownloader;
+			productReference = 6676BDB718335444004A463B /* WixDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6676BDAF18335444004A463B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "iRoot Design";
+				TargetAttributes = {
+					6676BDB618335444004A463B = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 6676BDB218335444004A463B /* Build configuration list for PBXProject "WixDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6676BDAE18335444004A463B;
+			productRefGroup = 6676BDB818335444004A463B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6676BDB618335444004A463B /* WixDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6676BDB518335444004A463B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E74D03184C1E9200F38D05 /* image.php in Resources */,
+				66FC650318452E3E00F664CC /* pwned@2x.png in Resources */,
+				6676BDF918336EA0004A463B /* wix.icns in Resources */,
+				66FC650718452F8500F664CC /* tip@2x.png in Resources */,
+				66952EBD188EF4450048CC6F /* dynamicmodel.txt in Resources */,
+				66280D12188F522100B9B2DF /* adfooter.html in Resources */,
+				66280D14188F523500B9B2DF /* adheader.html in Resources */,
+				6631446718AC95ED00083F65 /* htaccess in Resources */,
+				6676BDF218336BD8004A463B /* pwned.png in Resources */,
+				66FC650518452EAE00F664CC /* tip.png in Resources */,
+				667F563518AB157C003BB93E /* DynamicImageResizer.php in Resources */,
+				665155F31892EA6C0020BA24 /* contact.php in Resources */,
+				66A7379B189077160053EB6F /* html5shiv.html in Resources */,
+				66FC650C184531DD00F664CC /* ToolTip.xib in Resources */,
+				66FC650F1845320500F664CC /* MainMenu.xib in Resources */,
+				66CE4E48184A8A0C00123FF8 /* index.php in Resources */,
+				66160F40184C2F5D00C4FDFC /* seo.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6676BDB318335444004A463B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FC64FE18452ADB00F664CC /* ToolTipController.m in Sources */,
+				6676BDCE18335444004A463B /* AppDelegate.m in Sources */,
+				6676BDC718335444004A463B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66FC650A184531DD00F664CC /* ToolTip.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66FC650B184531DD00F664CC /* en */,
+			);
+			name = ToolTip.xib;
+			sourceTree = "<group>";
+		};
+		66FC650D1845320500F664CC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66FC650E1845320500F664CC /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6676BDE618335444004A463B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		6676BDE718335444004A463B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		6676BDE918335444004A463B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = WixDownloader/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6676BDEA18335444004A463B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = WixDownloader/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6676BDB218335444004A463B /* Build configuration list for PBXProject "WixDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6676BDE618335444004A463B /* Debug */,
+				6676BDE718335444004A463B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6676BDE818335444004A463B /* Build configuration list for PBXNativeTarget "WixDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6676BDE918335444004A463B /* Debug */,
+				6676BDEA18335444004A463B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6676BDAF18335444004A463B /* Project object */;
+}

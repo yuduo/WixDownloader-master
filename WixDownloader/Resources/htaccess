@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^(.*)\.(.*)\.(.*)\.(.*)\.00_jpg_srz$ $1.jpg?size=$2
+    RewriteRule ^(.*)\.(.*)\.(.*)\.(.*)\.00_png_srz$ $1.png?size=$2
+    RewriteRule ^(.*)\.(.*)\.(.*)\.(.*)\.00_wix_mp_srz$ $1.wix_mp?size=$2
+    AddType application/x-httpd-php .png .jpg .wix_mp
+</IfModule>

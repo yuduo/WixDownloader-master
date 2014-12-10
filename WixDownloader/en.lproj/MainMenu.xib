@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="WixDownloader (Version 1.13)" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="570" height="328"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="570" height="328"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Bz4-sh-hFC">
+                        <rect key="frame" x="0.0" y="91" width="256" height="256"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="wix" id="8M6-MX-OFb"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="EZZ-57-mI6">
+                        <rect key="frame" x="37" y="86" width="212" height="136"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pwned" id="JcF-Ow-h2r"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" id="kom-xy-4V1">
+                        <rect key="frame" x="77" y="13" width="103" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Download" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Aha-EX-cgO">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="download_Click:" target="nhg-GP-H0q" id="Jsc-DW-cWa"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="uPd-zb-D68">
+                        <rect key="frame" x="525" y="232" width="28" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title="site" bezelStyle="rounded" image="tip" imagePosition="only" alignment="center" inset="2" id="fB8-KZ-AK1">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="tooltip_Click:" target="nhg-GP-H0q" id="2Z1-Yz-22b"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="d1O-VW-Pow">
+                        <rect key="frame" x="525" y="160" width="28" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title="domain" bezelStyle="rounded" image="tip" imagePosition="only" alignment="center" inset="2" id="KB8-fK-xJR">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="tooltip_Click:" target="nhg-GP-H0q" id="Pl6-a3-ByQ"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="7Nh-dw-zm1">
+                        <rect key="frame" x="525" y="88" width="28" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title="email" bezelStyle="rounded" image="tip" imagePosition="only" alignment="center" inset="2" id="W4H-wL-sQl">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="tooltip_Click:" target="nhg-GP-H0q" id="3rl-OK-bl2"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="5vI-9C-bMj">
+                        <rect key="frame" x="522" y="43" width="28" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title="level" bezelStyle="rounded" image="tip" imagePosition="only" alignment="center" inset="2" id="AmA-Cp-LUR">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="tooltip_Click:" target="nhg-GP-H0q" id="vHr-o6-4bt"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="pMW-pt-1mr">
+                        <rect key="frame" x="252" y="235" width="269" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="http://www.ifixit.com/Device/Phone" drawsBackground="YES" id="zbG-fb-S5c">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="HRm-Sn-J65">
+                        <rect key="frame" x="486" y="46" width="35" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="3" drawsBackground="YES" id="UDJ-qM-ZGD">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="eA7-4h-TQJ">
+                        <rect key="frame" x="250" y="291" width="228" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Unofficial Wix.com Site Downloader" id="b2s-cI-DKq">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="MLt-Bm-mUz">
+                        <rect key="frame" x="250" y="50" width="55" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Agent:" id="E6d-Eo-QXG">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="d2O-dx-qwQ">
+                        <rect key="frame" x="250" y="260" width="114" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wix.com Website:" id="WPk-HB-84d">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="F0s-sp-vRY">
+                        <rect key="frame" x="442" y="49" width="40" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Level:" id="LLU-xg-fSL">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="DHS-Pk-hav">
+                        <rect key="frame" x="250" y="188" width="123" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Your Own Domain:" id="pIh-mO-Ql0">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="GY1-Af-JdE">
+                        <rect key="frame" x="252" y="163" width="269" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="http://www.ifixit.com/Device/Phone" drawsBackground="YES" id="Vhb-Tx-eWA">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="vnm-sr-vSJ">
+                        <rect key="frame" x="252" y="280" width="301" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="48h-OD-mDr">
+                        <rect key="frame" x="252" y="77" width="301" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="h3r-qr-l1T">
+                        <rect key="frame" x="524" y="18" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
+                    <button id="9AZ-TB-X5o">
+                        <rect key="frame" x="250" y="211" width="127" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Download Media" bezelStyle="regularSquare" imagePosition="left" inset="2" id="iPf-8B-gOf">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="tooltip_Click:" target="nhg-GP-H0q" id="82S-WE-2Vb"/>
+                        </connections>
+                    </button>
+                    <button id="PHa-n8-CJk">
+                        <rect key="frame" x="399" y="211" width="127" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Download Editor" bezelStyle="regularSquare" imagePosition="left" inset="2" id="dRG-Cd-cRU">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="tooltip_Click:" target="nhg-GP-H0q" id="pKu-Ec-MQZ"/>
+                        </connections>
+                    </button>
+                    <button id="eLn-3K-thc">
+                        <rect key="frame" x="399" y="139" width="156" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Enable SEO" bezelStyle="regularSquare" imagePosition="left" inset="2" id="U2S-hm-E2l">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="tooltip_Click:" target="nhg-GP-H0q" id="Vtr-gk-MFd"/>
+                        </connections>
+                    </button>
+                    <button id="Te7-Vg-EAt">
+                        <rect key="frame" x="250" y="139" width="137" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="My Server has PHP" bezelStyle="regularSquare" imagePosition="left" inset="2" id="jAi-wZ-y5P">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="tooltip_Click:" target="nhg-GP-H0q" id="Ejv-lf-XDH"/>
+                        </connections>
+                    </button>
+                    <progressIndicator maxValue="100" indeterminate="YES" style="bar" id="Rhr-OJ-NhG">
+                        <rect key="frame" x="252" y="16" width="212" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="E7k-97-1W4">
+                        <rect key="frame" x="475" y="18" width="48" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="%" id="cAR-mo-jgQ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <comboBox verticalHuggingPriority="750" id="mGC-7Y-hDO">
+                        <rect key="frame" x="297" y="44" width="138" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="FireFox" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="M4p-h7-u5H">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <objectValues>
+                                <string>Firefox</string>
+                                <string>Internet Explorer</string>
+                            </objectValues>
+                        </comboBoxCell>
+                    </comboBox>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="soN-MO-PIY">
+                        <rect key="frame" x="250" y="116" width="132" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Contact Form Email:" id="FfC-Ma-3f0">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="Lue-8b-kjn">
+                        <rect key="frame" x="252" y="91" width="269" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="user@email.com" drawsBackground="YES" id="CSg-hJ-qAt">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <customObject id="nhg-GP-H0q" customClass="AppDelegate">
+            <connections>
+                <outlet property="agent" destination="mGC-7Y-hDO" id="vTU-AS-OEU"/>
+                <outlet property="domain" destination="GY1-Af-JdE" id="hO9-e5-dDO"/>
+                <outlet property="download" destination="kom-xy-4V1" id="qxc-fk-zcY"/>
+                <outlet property="editor" destination="PHa-n8-CJk" id="lVW-HB-WBY"/>
+                <outlet property="email" destination="Lue-8b-kjn" id="dFB-3u-7vn"/>
+                <outlet property="level" destination="HRm-Sn-J65" id="EDM-pZ-Rbt"/>
+                <outlet property="loading" destination="h3r-qr-l1T" id="ppR-Ie-shg"/>
+                <outlet property="media" destination="9AZ-TB-X5o" id="8I3-OD-Gwt"/>
+                <outlet property="percent" destination="E7k-97-1W4" id="QUb-k6-Isy"/>
+                <outlet property="php" destination="Te7-Vg-EAt" id="aym-wW-jAW"/>
+                <outlet property="progress" destination="Rhr-OJ-NhG" id="H1K-tk-qMs"/>
+                <outlet property="seo" destination="eLn-3K-thc" id="XGd-B0-utO"/>
+                <outlet property="site" destination="pMW-pt-1mr" id="704-O2-lNQ"/>
+                <outlet property="window" destination="371" id="keR-mA-nTW"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="pwned" width="200" height="150"/>
+        <image name="tip" width="16" height="16"/>
+        <image name="wix" width="256" height="256"/>
+    </resources>
+</document>
