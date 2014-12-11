@@ -20,7 +20,7 @@ NSString* wixappsURL;
 NSString* coreURL;
 NSString* mediaURL;
 NSTask* HTTPServer;
-
+NSMutableArray *finishedArray;
 - (id) init
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowWillClose:) name:NSWindowWillCloseNotification object:nil];
@@ -35,7 +35,7 @@ NSTask* HTTPServer;
 
 -(NSString*)downloadFile:(NSString*)url
 {
-    NSLog(@"download file path = %@",url);
+//    NSLog(@"download file path = %@",url);
     BOOL allow = TRUE;
 //    for(int i = 0; i < [allowedDomains count]; i++)
 //    {
@@ -97,6 +97,10 @@ NSTask* HTTPServer;
 
 -(void)startThread
 {
+    finishedArray = [[NSMutableArray alloc]init];
+    NSArray *start = [NSArray arrayWithObjects:@"http://www.ifixit.com/device/Camera", nil];
+    [self dealWithURLArray:start];
+    return;
     NSError * error = nil;
     
     //==== Propriotery to wix.com ======
@@ -136,9 +140,9 @@ NSTask* HTTPServer;
 //    {
 //        indexHTML = [indexHTML stringByReplacingOccurrencesOfString:indexSEO withString:@""];
 //    }
-    
+    NSArray *filename = [[domain stringValue] componentsSeparatedByString: @"/"];
     //Save original
-    [indexHTML writeToFile:[NSString stringWithFormat:@"%@/%@",DownloadPath,[indexHTML stringByReplacingOccurrencesOfString:@"/" withString:@"."]] atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    [indexHTML writeToFile:[NSString stringWithFormat:@"%@/%@",DownloadPath,[filename objectAtIndex:[filename count]-1]] atomically:YES encoding:NSUTF8StringEncoding error:&error];
     
     //Yes Son! split it
     NSArray *jsonHTTP = [indexHTML componentsSeparatedByString: @"\""];
@@ -952,6 +956,91 @@ NSTask* HTTPServer;
 }
 -(void)moreDeepDownload:(NSString*)indexHTML
 {
+    
+}
+
+- (void)dealWithURLArray:(NSArray*)array
+{
+    for (int i = 0; i < [array count]; i ++) {
+        NSString *url = [array objectAtIndex:i];
+        NSArray *array = [self downloadSaveFileGet:url];
+        [finishedArray addObject:url];
+        [self dealWithURLArray:[self getNextURLArray:array]];
+    }
+}
+-(NSArray*)getNextURLArray:(NSArray*)jsonHTTP
+{
+    NSMutableArray *urlArray = [[NSMutableArray alloc]init];
+    //==== Propriotery to wix.com ======
+    for(int i = 0; i < [jsonHTTP count]; i++)  //Get static URLs dynamically
+    {
+        
+        NSString *str  = [jsonHTTP objectAtIndex:i];
+        
+        if([str length] > 7 && str!=nil){
+            
+            if ([self isURLAllowed:str]) {
+                                    NSLog(str);
+                [urlArray addObject:str];
+            }
+        }
+        
+        
+    }
+    return urlArray;
+}
+-(BOOL)isURLAllowed:(NSString*)who
+{
+    if ([who rangeOfString:@"/Device/"].location != NSNotFound   && [who rangeOfString:@"/Answers/"].location == NSNotFound && [who rangeOfString:@"ifixit"].location == NSNotFound && [who rangeOfString:@"/Device/Phone"].location == NSNotFound && [who rangeOfString:@"app-argument"].location == NSNotFound && ![self isInFinished:who] && [who rangeOfString:@"/Edit/"].location == NSNotFound && [who rangeOfString:@"/History/"].location == NSNotFound && [who rangeOfString:@"/new/"].location == NSNotFound) //pick only url and avoid comments
+    {
+        return YES;
+    }
+    if ([who rangeOfString:@"/Guide/"].location != NSNotFound  && ![who isEqualToString:@"/Guide/Search"] && [who rangeOfString:@"/new/"].location == NSNotFound && [who rangeOfString:@"/Device/"].location == NSNotFound && [who rangeOfString:@"/login"].location == NSNotFound && [who rangeOfString:@"/register"].location == NSNotFound && [who rangeOfString:@"ifixit"].location == NSNotFound && [who rangeOfString:@"/new/"].location == NSNotFound && ![self isInFinished:who] && [who rangeOfString:@"cloudfront"].location == NSNotFound ) //pick only url and avoid comments
+    {
+        return YES;
+    }
+    return NO;
+}
+-(NSArray*)downloadSaveFileGet:(NSString*)url
+{
+    NSError *error=nil;
+    if ([url rangeOfString:@"www.ifixit.com"].location == NSNotFound) {
+        url = [@"http://www.ifixit.com" stringByAppendingString:url];
+    }
+    BOOL isGuide = [self checkIsGuide:url];
+    if (isGuide) {
+        DownloadPath = [NSString stringWithFormat:@"%@/Downloads/%@",NSHomeDirectory(),@"www.ifixit.com/HTML"];
+    }else{
+        DownloadPath = [NSString stringWithFormat:@"%@/Downloads/%@",NSHomeDirectory(),[url stringByReplacingOccurrencesOfString:@"http://" withString:@""]];
+    }
+    NSString *indexHTML =   [self downloadFile:url];
+    //Prevent ":" in the directory name as port#
+    DownloadPath = [DownloadPath stringByReplacingOccurrencesOfString:@":" withString:@"-"];
+    [[NSFileManager defaultManager] createDirectoryAtPath:DownloadPath withIntermediateDirectories:YES attributes:nil error:&error];
+    
+    
+    NSArray *filename = [url componentsSeparatedByString: @"/"];
+    //Save original
+    [indexHTML writeToFile:[NSString stringWithFormat:@"%@/%@",DownloadPath,[filename objectAtIndex:[filename count]-1]] atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    NSArray *jsonHTTP = [indexHTML componentsSeparatedByString: @"\""];
+    if (isGuide) {
+        return nil;
+    }
+    return jsonHTTP;
+}
+
+-(BOOL)checkIsGuide:(NSString*)who
+{
+    if ([who rangeOfString:@"/Guide/"].location != NSNotFound ) //pick only url and avoid comments
+    {
+        return YES;
+    }
+    return NO;
+}
+
+-(BOOL)isInFinished:(NSString*)url
+{
+    return [finishedArray containsObject:url];
     
 }
 @end
